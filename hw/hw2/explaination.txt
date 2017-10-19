@@ -1,0 +1,18 @@
+/*
+    JTSK-320111
+    explaination.txt
+    Yiping Deng
+    y.deng@jacobs-university.de
+*/
+a) The error message simply informs the programmer that "string", "cout","endl" is not defined in the scope. 
+Because "string", "cout", "endl" is defined in the namespace std, and the line "using namespace std;" simply bring all the definiton of std into the current scope.
+Without it, we need to explicitly use "std::string", "std::cout", "std::endl" to access these definitions.
+
+
+b) The erro message says that name is not defined in the scope. Clearly, "name" is a private member in the Critter class definition. Without "Critter::", the function definition is just a normal function definition.
+It does not represent the public method in Critter class. Clearly, it will not compile and the name is not in the scope.
+One possible solution is to write the class method implementation in the header file,
+in the class public areas.
+
+
+

@@ -47,4 +47,23 @@ Note: delete `delete ptr_1; delete [] ptr_7;` To delete allocated array, use del
 ## New Header File
 stdlib.h and math.h is changed to cstdlib and cmath, and it will wrapped into std name space.
 
+## The string class
+```
+string empty;
+string a("this is also a string"); //direct constructor call
+string b = "also this one";//copy assignment
+empty = a;//assignment
+empty += " 8";//self-assignment
+```
+
+## How to Define New Classes
+The keyword class is used to define a new class.
+`private, public, protected` is used to control access.
+
+## Critter Class
+Critter have several properties( name, color, hunger)
+Data will be private, and use setter and getter to access data
+A additional method to print the data
+
+
 
